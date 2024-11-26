@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ice Lady - Menu</title>
+    <link rel="stylesheet" href="/itis3135/styles/project.css">
+</head>
+<body>
+    <header>
+        <h1>Locations</h1>
+        <hr id="locations-divider">
+        <p>❄ Handcrafted for you the way you want it! ❄</p>
+    </header>
+    <nav id="menu-nav">
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='locations.html'">Locations</button>
+        <button onclick="location.href='about.html'">About</button>
+        <button onclick="location.href='contact.html'">Contact</button>
+    </nav>
+    <main>
+        <section id="locations">
+            <h2>Find The Ice Lady</h2>
+            <p>Check out where The Ice Lady will be shaving ice this month. Select a month to view locations and times.</p>
+
+            <!-- Dropdown for selecting the month -->
+            <label for="month-select">Choose a month:</label>
+            <select id="month-select">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+            </select>
+
+            <div class="calendar">
+                <p>Embed your calendar or schedule here.</p>
+            </div>
+            <table class="locations-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>July 1, 2024</td>
+                        <td>Main Street Market</td>
+                        <td>12:00 PM - 4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>July 5, 2024</td>
+                        <td>City Park</td>
+                        <td>2:00 PM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>July 8, 2024</td>
+                        <td>Community Fairgrounds</td>
+                        <td>11:00 AM - 3:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <section class="locations-photo">
+        <img src="/itis3135/images/ice lady locations.jpg" alt="photo of the ice lady shaving ice with daughter">
+        <img src="/itis3135/images/ice lady locations2.jpg" alt="photo of ice lady with kids at her shaved ice trailor">
+    </section>
+    <footer>
+        <p>© 2024 The Ice Lady. All rights reserved.</p>
+    </footer>
+</body>
+</html>
