@@ -30,6 +30,7 @@ header {
     border-radius: 1rem;
     box-shadow: 2px 9px 7px #22222233;
     text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
 main {
     display: block;
@@ -51,4 +52,17 @@ span, footer {
 }
 .social-img {
     width: 25%;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem; 
+    padding-bottom: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+nav a {
+    text-decoration: none;
+    color: #413b3b; 
 }
