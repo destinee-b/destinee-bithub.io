@@ -350,3 +350,78 @@ select {
 .contact-form button:hover {
     background-color: #a1333a;
 }
+
+/* flavor randomizer button styling */
+#flavor-suggestor {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #fce6c5, #eed2db);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+#flavor-suggestor h2 {
+    font-size: 1.8rem;
+    color: #d64550;
+    margin-bottom: 10px;
+}
+
+#flavor-suggestor button {
+    background-color: #d64550;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#flavor-suggestor button:hover {
+    background-color: #e26b75;
+    transform: scale(1.05);
+}
+
+#suggested-flavor {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f06d78;
+}
+
+/* review section */
+#reviews {
+    text-align: center;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(to right, #ffebcc, #eed2db);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+#reviews h2 {
+    font-size: 2rem;
+    color: #d64550;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#reviews p {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #495867;
+    margin-bottom: 10px;
+}
+
+#reviews .author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #648767;
+    margin-top: 10px;
+}
+
+
+

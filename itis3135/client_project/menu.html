@@ -13,8 +13,9 @@
         <hr id="menu-divider">
         <p>❄ Handcrafted for you the way you want it! ❄</p>
     </header>
-    <nav id="menu-nav">
+    <nav id="index-nav">
         <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='menu.html'">Menu</button>
         <button onclick="location.href='locations.html'">Locations</button>
         <button onclick="location.href='about.html'">About</button>
         <button onclick="location.href='contact.html'">Contact</button>
@@ -22,10 +23,17 @@
         <button onclick="location.href='review2.html'">Peer Review 2</button>
     </nav>
     <main>
+        <section id="flavor-suggestor">
+            <h2>Can't Decide?</h2>
+            <button onclick="suggestFlavor()">Suggest a Flavor</button>
+            <p id="suggested-flavor"></p>
+        </section>
+        
         <img id="menu" src="../images/menu.jpg" alt="the ice lady menu">
     </main>
     <footer>
         <p>© 2024 The Ice Lady. All rights reserved.</p>
     </footer>
+    <script src="../scripts/flavors.js"></script>
 </body>
 </html>
