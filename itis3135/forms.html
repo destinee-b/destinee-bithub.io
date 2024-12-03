@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        h2 {
+            text-align: center;
+            font-size: 25px;
+            margin: auto; 
+        }
+
+        hr {
+            width: 20%;
+        }
+
+        p {
+            text-align: center;
+            font-size: 19px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+        }
+
+        form {
+            margin: 0 auto;
+            text-align: center;
+            width: 50%;
+            font-size: 19px;            
+        }
+
+        form button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        form button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+        }
+
+        form button[type="reset"] {
+            background-color: #555;
+            color: #fff;
+        }
+
+        fieldset {
+            margin: 0 auto;
+            text-align: left;
+            width: 50%;
+        }
+    </style>
+  </head>
+  <div data-include="components/header.html"></div>
+  <body>
+    <main>
+        <h2>Form Submission</h2>
+        <hr>
+        <form action="#">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required size="30"><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required size="30"><br><br>
+            <fieldset>
+                <legend>Preferred Contact Methods (choose at least one):</legend>
+                <input type="checkbox" id="contact-email" name="contact-method" value="Email">
+                <label for="contact-email">Email</label><br>
+                <input type="checkbox" id="contact-phone" name="contact-method" value="Phone">
+                <label for="contact-phone">Phone</label><br>
+                <input type="checkbox" id="contact-text" name="contact-method" value="Text">
+                <label for="contact-text">Text</label><br>
+            </fieldset><br>
+            <label for="inquiry-type">Reason for Contact:</label><br>
+            <select id="inquiry-type" name="inquiry-type" required>
+                <option value="">Select one</option>
+                <option value="general">General Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="support">Support Request</option>
+            </select><br><br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+  </body>
+</html>
