@@ -1,5 +1,5 @@
 /* home page styling below */
-body, h1, h2, p {
+body, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -324,7 +324,6 @@ select {
 }
 
 .contact-form input, .contact-form textarea {
-    width: 100%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
