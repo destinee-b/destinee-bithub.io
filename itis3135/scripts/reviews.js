@@ -8,7 +8,7 @@ const reviews = [
     { text: "I can’t get enough of the Strawberry Shortcake flavor!", author: "Amanda Martinez" },
     { text: "Affordable, delicious, and always served with a smile.", author: "David Garcia" },
     { text: "Every visit feels like a mini vacation.", author: "Jessica Miller" },
-    { text: "The Tiger's Blood flavor is my absolute favorite!", author: "Daniel Thompson" },
+    { text: "The Tiger's Blood flavor is my absolute favorite!", author: "Daniel Thompson" }
 ];
 
 const randomIndex = Math.floor(Math.random() * reviews.length);
